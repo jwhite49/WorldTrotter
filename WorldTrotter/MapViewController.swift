@@ -10,10 +10,14 @@ import MapKit
 class MapViewController: UIViewController {
 
     var mapView: MKMapView!
+    var filterSwitch: UISwitch!
+    var filterLabel: UILabel!
     
     override func loadView() {
         mapView = MKMapView()
         view = mapView
+        
+        mapView.showsCompass = false
         
         let segmentedControl = UISegmentedControl(items: ["Standard","Hybrid", "Satellite"])
         segmentedControl.backgroundColor = UIColor.systemBackground
@@ -33,6 +37,29 @@ class MapViewController: UIViewController {
         topConstraint.isActive = true
         leadingConstraint.isActive = true
         trailingConstraint.isActive = true
+        
+        filterLabel = UILabel()
+        filterLabel.text = "Points of Interest"
+        filterLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(filterLabel)
+
+        
+        filterSwitch = UISwitch()
+        filterSwitch.isOn = false
+        filterSwitch.addTarget(self, action: #selector(togglePointsOfInterest(_:)), for: .valueChanged)
+        filterSwitch.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(filterSwitch)
+        
+        NSLayoutConstraint.activate([
+            filterLabel.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 12),
+            filterLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
+                    
+            filterSwitch.leadingAnchor.constraint(equalTo:filterLabel.trailingAnchor, constant: 8),
+            filterSwitch.centerYAnchor.constraint(equalTo: filterLabel.centerYAnchor)
+        ])
+
+
+
     }
     
     
@@ -55,6 +82,14 @@ class MapViewController: UIViewController {
             mapView.mapType = .satellite
         default:
             break
+        }
+    }
+    
+    @objc func togglePointsOfInterest(_ sender: UISwitch) {
+        if sender.isOn {
+            mapView.pointOfInterestFilter = .includingAll
+        } else {
+            mapView.pointOfInterestFilter = .excludingAll
         }
     }
 }
