@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; configuration.title = "Show Answer"; ObjectID = "0Ga-dR-zBn"; */
+"0Ga-dR-zBn.configuration.title" = "Show Answer";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0Ga-dR-zBn"; */
+"0Ga-dR-zBn.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Quiz"; ObjectID = "8ff-rn-Eb0"; */
+"8ff-rn-Eb0.title" = "Quiz";
+
+/* Class = "UILabel"; text = "???"; ObjectID = "AoI-yr-ppU"; */
+"AoI-yr-ppU.text" = "???";
+
+/* Class = "UILabel"; text = "degrees Fahreinheit"; ObjectID = "BX2-56-kl3"; */
+"BX2-56-kl3.text" = "degrees Fahreinheit";
+
+/* Class = "UITextField"; placeholder = "value"; ObjectID = "GPn-Kp-Gr6"; */
+"GPn-Kp-Gr6.placeholder" = "value";
+
+/* Class = "UILabel"; text = "???"; ObjectID = "H1U-fE-Z5K"; */
+"H1U-fE-Z5K.text" = "???";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "Hvw-9G-JVd"; */
+"Hvw-9G-JVd.text" = "100";
+
+/* Class = "UILabel"; text = "is really"; ObjectID = "QY0-HK-sBg"; */
+"QY0-HK-sBg.text" = "is really";
+
+/* Class = "UILabel"; text = "degrees Celcius"; ObjectID = "gQn-F9-rPD"; */
+"gQn-F9-rPD.text" = "degrees Celcius";
+
+/* Class = "UIButton"; configuration.title = "Next Question"; ObjectID = "gXE-2C-vs4"; */
+"gXE-2C-vs4.configuration.title" = "Next Question";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gXE-2C-vs4"; */
+"gXE-2C-vs4.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "lEO-t4-2Gx"; */
+"lEO-t4-2Gx.title" = "Map";
+
+/* Class = "UITabBarItem"; title = "Convert"; ObjectID = "vve-V1-3AR"; */
+"vve-V1-3AR.title" = "Convert";
